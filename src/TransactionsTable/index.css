@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f8df8c;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1.5px solid black;
+  padding: 8px;
+  text-align: left;
+  font-size: 12px;
+}
+
+th {
+  background-color: #f8df8c;
+}
+
+.table-container {
+  width: 100%;
+  overflow: auto;
+}
