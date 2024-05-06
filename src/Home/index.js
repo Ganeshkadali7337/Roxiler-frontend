@@ -203,7 +203,7 @@ class Home extends Component {
                     <YAxis tick={{ fontSize: 16 }} />
                     <Tooltip />
                     <Legend />
-                    <Bar dataKey="count" fill="#6CE5E8" radius={[5, 5, 0, 0]} />
+                    <Bar dataKey="count" fill="#6CE5E8" radius={[3, 3, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
