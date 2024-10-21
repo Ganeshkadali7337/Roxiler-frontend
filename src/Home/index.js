@@ -40,21 +40,21 @@ class Home extends Component {
     this.setState({ isLoading: true });
     console.log(month);
     const response = await fetch(
-      `roxiler-backed-production-9553.up.railway.app/transactions?month=${month}&search=${search}&page=${page}&perPage=${perPge}`
+      `https://roxiler-backed.onrender.com/transactions?month=${month}&search=${search}&page=${page}&perPage=${perPge}`
     );
     const data = await response.json();
     if (response.ok) {
       this.setState({ isLoading: false, transactionsData: data.data });
     }
     const response2 = await fetch(
-      `roxiler-backed-production-9553.up.railway.app/statistics?month=${month}`
+      `https://roxiler-backed.onrender.com/statistics?month=${month}`
     );
     const statisticsData = await response2.json();
     if (response2.ok) {
       this.setState({ isLoading: false, statistics: statisticsData });
     }
     const response3 = await fetch(
-      `roxiler-backed-production-9553.up.railway.app/items-in-price-range?month=${month}`
+      `https://roxiler-backed.onrender.com/items-in-price-range?month=${month}`
     );
     const priceRangeData = await response3.json();
 
