@@ -40,7 +40,7 @@ class Home extends Component {
     this.setState({ isLoading: true });
     console.log(month);
     const response = await fetch(
-      `https://roxiler-backed-production.up.railway.app/transactions?month=${month}&search=${search}&page=${page}&perPage=${perPge}`
+      `roxiler-backed-production-9553.up.railway.app/transactions?month=${month}&search=${search}&page=${page}&perPage=${perPge}`
     );
     const data = await response.json();
     if (response.ok) {
