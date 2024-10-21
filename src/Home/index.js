@@ -47,14 +47,14 @@ class Home extends Component {
       this.setState({ isLoading: false, transactionsData: data.data });
     }
     const response2 = await fetch(
-      `https://roxiler-backed-production.up.railway.app/statistics?month=${month}`
+      `roxiler-backed-production-9553.up.railway.app/statistics?month=${month}`
     );
     const statisticsData = await response2.json();
     if (response2.ok) {
       this.setState({ isLoading: false, statistics: statisticsData });
     }
     const response3 = await fetch(
-      `https://roxiler-backed-production.up.railway.app/items-in-price-range?month=${month}`
+      `roxiler-backed-production-9553.up.railway.app/items-in-price-range?month=${month}`
     );
     const priceRangeData = await response3.json();
 
